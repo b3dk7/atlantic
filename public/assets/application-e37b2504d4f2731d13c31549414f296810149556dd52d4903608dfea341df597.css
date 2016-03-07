@@ -1,0 +1,108 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+body{
+  margin-top: 2em;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width:90%;
+  background-color: #4a4a4a;
+  color: #00c4ff;
+  
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+a {
+    color: #ffffff;
+}
+
+#authinfo{
+  font-style: italic;
+}
+
+#logo{
+  font-size: 2.2em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1{
+  font-size: 1.7em;
+}
+
+h2{
+  font-size: 1.4em;
+}
+
+
+.tel{
+  font-weight: bold;
+}
+.home{
+  font-size: 1.5em;
+}
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+img {
+    
+
+    width: 300px;
+
+
+
+}
+
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00c4ff;
+    font-size: 1.6em;
+}
+
+.navi {
+    float: left;
+}
+
+.navi.righty {
+    float: right;
+}
+
+a.navi {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    
+    text-decoration: none;
+}
+
+a.navi:hover:not(.active) {
+    background-color: black;
+}
+
+a.navi.active {
+    color: #4a4a4a;
+    background-color: #ffffff;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+  <meta name="description" content="<%= @description %>">
+  <%= favicon_link_tag 'favicon.ico' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+  <header>
+    <span id="logo"><%= link_to "Atlantic Cyber Defenses", root_path %></span>
+    <nav>
+      <!--<%= nav_help("Home", root_path) %> -->
+      <%= nav_help("Services", services_path) %>
+      <%= nav_help("Team", team_path) %>
+      <%= nav_help("Social", social_path) %>
+      <%= nav_help("Contact", contact_path) %>
+      <%= nav_help("About Us", about_path, "righty") %>
+
+    </nav>
+  </header>
+
+<div class="container">
+<%= yield %>
+</div>
+</body>
+</html>
